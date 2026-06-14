@@ -1,79 +1,85 @@
-# Convolyser AI Decision Copilot
+ Convolyser AI Decision Copilot
 
-An AIML project inspired by Convolyser AI.
+An AI-powered Conversation Intelligence System inspired by Convolyser AI.
 
 ## Project Overview
 
-The goal of this project is to transform customer conversations into actionable business intelligence.
+This project aims to build an AI-powered Decision Copilot that analyzes customer conversations and generates actionable business insights.
 
-Traditional conversation analytics systems identify customer sentiment and conversation trends. This project extends those capabilities by detecting competitors, identifying root causes of customer issues, predicting churn risk, and recommending business actions.
+The system will help organizations understand:
 
-## Current Features
+- Customer sentiment
+- Competitor mentions
+- Root causes of complaints
+- Churn risk
+- Recommended actions
 
-### 1. Sentiment Analysis
+## Completed Features
 
-Uses a pretrained Transformer model from Hugging Face to classify customer conversations as:
+### Sentiment Analysis
 
-* Positive
-* Negative
+- Built using Hugging Face Transformers
+- Detects positive and negative sentiment
+- Provides confidence scores
 
-The model also provides a confidence score for each prediction.
+## Features Under Development
 
-## Upcoming Features
+### Competitor Detection
 
-### 2. Competitor Detection
+- Detect mentions of Airtel, Jio, Vodafone, VI and BSNL
+- Generate competitor intelligence insights
 
-Detect mentions of competitors such as:
+## Planned Features
 
-* Airtel
-* Jio
-* Vodafone
-* BSNL
-* VI
+### Root Cause Detection
 
-### 3. Root Cause Detection
+- Billing Issues
+- Network Issues
+- Support Issues
+- Technical Issues
 
-Identify the primary reason behind customer dissatisfaction:
+### Churn Prediction
 
-* Billing Issues
-* Network Issues
-* Support Issues
-* Technical Issues
+Predict customer churn using:
+- Sentiment
+- Competitor mentions
+- Complaint history
 
-### 4. Churn Risk Prediction
+### AI Recommendation Engine
 
-Predict the likelihood of a customer leaving based on conversation patterns and sentiment.
+Suggest actions such as:
+- Escalate issue
+- Priority callback
+- Retention offer
 
-### 5. AI Recommendation Engine
+### Dashboard
 
-Generate suggested actions for managers and support teams.
+Interactive Streamlit dashboard for business users.
 
 ## Tech Stack
 
-* Python
-* Hugging Face Transformers
-* PyTorch
-* Git
-* GitHub
-* VS Code
+- Python
+- Hugging Face Transformers
+- PyTorch
+- Scikit-Learn
+- Streamlit
+- Git
+- GitHub
+- VS Code
 
-## Project Structure
+## Progress
 
-Convolyser-AI-Copilot/
-
-├── app/
-
-├── data/
-
-├── models/
-
-├── README.md
-
-├── requirements.txt
-
-└── .gitignore
+- Git & GitHub Setup ✅
+- Project Structure Setup ✅
+- Sentiment Analysis Module ✅
+- Competitor Detection Module ⏳
+- Root Cause Detection Module ⏳
+- Churn Prediction Module ⏳
+- AI Recommendation Engine ⏳
+- Streamlit Dashboard ⏳
 
 ## Author
 
 Shruti Singhal
-B.Tech AIML Student
+
+B.Tech Artificial Intelligence and Machine Learning (AIML)
