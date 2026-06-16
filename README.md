@@ -1,85 +1,107 @@
- Convolyser AI Decision Copilot
+# Convolyser AI Copilot
 
-An AI-powered Conversation Intelligence System inspired by Convolyser AI.
+An AI-powered conversation intelligence system inspired by Convolyser.
 
-## Project Overview
+This project analyzes customer conversations to extract meaningful business insights such as sentiment, competitor mentions, and root causes of customer complaints.
 
-This project aims to build an AI-powered Decision Copilot that analyzes customer conversations and generates actionable business insights.
+## Features
 
-The system will help organizations understand:
+### 1. Sentiment Analysis
 
-- Customer sentiment
-- Competitor mentions
-- Root causes of complaints
-- Churn risk
-- Recommended actions
+Uses Hugging Face Transformers to classify customer sentiment.
 
-## Completed Features
+Example:
 
-### Sentiment Analysis
+Input:
+I am unhappy with your service.
 
-- Built using Hugging Face Transformers
-- Detects positive and negative sentiment
-- Provides confidence scores
+Output:
+NEGATIVE (99%)
 
-## Features Under Development
+---
 
-### Competitor Detection
+### 2. Competitor Detection (Rule-Based)
 
-- Detect mentions of Airtel, Jio, Vodafone, VI and BSNL
-- Generate competitor intelligence insights
+Detects known competitors mentioned in customer conversations.
 
-## Planned Features
+Example:
 
-### Root Cause Detection
+Input:
+I am moving to Airtel.
 
-- Billing Issues
-- Network Issues
-- Support Issues
-- Technical Issues
+Output:
+Competitor Detected: Airtel
 
-### Churn Prediction
+---
 
-Predict customer churn using:
-- Sentiment
-- Competitor mentions
-- Complaint history
+### 3. Competitor Detection using NER
 
-### AI Recommendation Engine
+Uses Named Entity Recognition (NER) to identify organization names dynamically.
 
-Suggest actions such as:
-- Escalate issue
-- Priority callback
-- Retention offer
+Example:
 
-### Dashboard
+Input:
+I am switching to Google.
 
-Interactive Streamlit dashboard for business users.
+Output:
+Organization Detected: Google
+
+---
+
+### 4. AI-Based Root Cause Detection
+
+Uses Zero-Shot Classification to identify probable causes behind customer complaints.
+
+Example:
+
+Input:
+My internet is slow and support never responds.
+
+Output:
+
+Support Issue: 61%
+Technical Issue: 23%
+Network Issue: 12%
+
+---
 
 ## Tech Stack
 
-- Python
-- Hugging Face Transformers
-- PyTorch
-- Scikit-Learn
-- Streamlit
-- Git
-- GitHub
-- VS Code
+* Python
+* Hugging Face Transformers
+* PyTorch
+* Git
+* GitHub
 
-## Progress
+---
 
-- Git & GitHub Setup ✅
-- Project Structure Setup ✅
-- Sentiment Analysis Module ✅
-- Competitor Detection Module ⏳
-- Root Cause Detection Module ⏳
-- Churn Prediction Module ⏳
-- AI Recommendation Engine ⏳
-- Streamlit Dashboard ⏳
+## Current Project Structure
 
-## Author
+```text
+Convolyser-AI-Copilot
+│
+├── app
+│   ├── sentiment.py
+│   ├── competitor_detection.py
+│   ├── ner_competitor_detection.py
+│   ├── root_cause_ai.py
+│   └── conversation_analyzer.py
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-Shruti Singhal
+## Upcoming Features
 
-B.Tech Artificial Intelligence and Machine Learning (AIML)
+* Hybrid Root Cause Detection
+* Unified Conversation Analyzer
+* Churn Risk Prediction
+* Business Insight Dashboard
+
+## Objective
+
+The goal of this project is to build a conversation intelligence platform that can help organizations understand customer sentiment, identify churn risks, detect competitors, and uncover root causes behind customer complaints.
+
+Built as an AIML learning project inspired by Convolyser.
+
